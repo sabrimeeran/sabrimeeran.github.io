@@ -1,4 +1,4 @@
-FEB_BTC_DATA = [
+FED_BTC_DATA = [
   {
     "DATE": "01/12/2014",
     "CBBTCUSD": "370"
