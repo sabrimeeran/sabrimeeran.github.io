@@ -4,7 +4,6 @@ var ctx = document.getElementById('priceChart');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
             label: '# of Votes',
             data: FED_BTC_DATA,
