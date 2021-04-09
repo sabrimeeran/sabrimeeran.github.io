@@ -2,7 +2,7 @@
 var dates = []; // on x-axis
 var prices = []; // on y-axis
 
-datesAtIntervals(1, 2021, 1, 2022, 1);
+datesAtIntervals(1, 2021, 0, 2022, 0);
 
 function datesAtIntervals(monthInterval, startYear, startMonth, finalYear, finalMonth) {
     var currentYear = startYear;
@@ -14,7 +14,7 @@ function datesAtIntervals(monthInterval, startYear, startMonth, finalYear, final
     } else if (startMonth > finalMonth) {
         return;
     }
-    for (i = 0; i < 20; i++) {
+    while(!(currentYear >= finalYear && currentMonth > finalMonth)) {
 
         monthFormat = (currentMonth + 1).toString()
         if (monthFormat.length == 1) {
@@ -22,12 +22,15 @@ function datesAtIntervals(monthInterval, startYear, startMonth, finalYear, final
         }
         var dateString = monthFormat + '/01/' + currentYear
 
-        if (currentMonth == 11) { // months are indexed starting 0
+        console.log(dateString)
+
+        if (currentMonth == 11) { // months are indexed starting 0 // we have to correct this for month interval!
             currentMonth = 0;
             currentYear += 1;
         } else {
             currentMonth += 1;
         }
+
 
     }
 
