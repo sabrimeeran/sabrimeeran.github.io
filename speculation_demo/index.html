@@ -18,17 +18,35 @@
     </ol>
 
     <p>
-        Whilst I wouldn't maximize profits with this strategy, it could still allow for fairly high profits without the risk of losing
-        everything by selling too late. It is also probably better to speculate in many different cryptocurrencies/blockchain tokens etc.
+        Whilst I wouldn't maximize profits with this strategy, it could still allow for fairly high profits without the risk of losing<br />
+        everything by selling too late. It is also probably better to speculate in many different cryptocurrencies/blockchain tokens etc.<br />
         since most coins - even the ones which seem plausible - will likely cause losses.
+    </p>
+
+    <p>
+        I show an example with principal £100, monthly 3% withdrawals,<br />
+        starting January 2019, ending April 2021 (when the entire holding is sold off)
     </p>
 
     <script type="text/javascript" src="fedbtcdata.json"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
-    <div style="width: 400px;">
-        <canvas id="line-chart" height="800" width="450">Your browser does not support the canvas element, sorry!</canvas>
+    <div style="width: 800px;">
+        <canvas id="line-chart" height="400" width="800">Your browser does not support the canvas element, sorry!</canvas>
     </div>
+
+    <p>
+        Initial purchase: <input type="number" id="start-purchase" min="0" max="10000000" value="100"/><br />
+        Initial month: <input type="month" id="start-month" value="2019-01"/><br />
+        Final month: <input type="month" id="final-month" value="2021-04"/><br /><br />
+
+        Percent sale: <input type="number" id="sale-pct" min="0" max="100" value="3"/><br />
+        Sale interval: <input type="number" id="month-interval" min="1" max="24" value="1"/>
+    </p>
+
+
+    <p><button type="button" id="run-button">Run</button></p>
+
 
     <script type="text/javascript" src="run.js"></script>
 
