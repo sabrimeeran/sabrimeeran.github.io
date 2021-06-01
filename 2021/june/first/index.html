@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Inflation thoughts</title>
+</head>
+<body style="font-family:'Times New Roman', Times, serif">
+    <h2>The question</h2>
+    <p>How much inflation do we expect in the future?</p>
+
+    <h2>The approach</h2>
+    <p>
+        I can only guess at the answer, but I'd like to try to come up with an independent conclusion -
+        which might be faulty or completely wrong. Nonetheless, I think it'll be fun to come up with an prediction,
+        and to discuss inflation and costs of living more broadly, and see what we can learn along the way.
+    </p>
+    <p>Firstly, what is inflation?</p>
+
+    <h2>Inflation definition</h2>
+
+    <p>We might as well define terms! Encylopedia Britannica says 'inflation' is:</p>
+    <blockquote cite="https://www.britannica.com/topic/inflation-economics">
+        collective increases in the supply of money, in money incomes, or in prices.
+        Inflation is generally thought of as an inordinate rise in the general level of prices.
+    </blockquote>
+
+    <p>
+        There are a few different measures of inflation. The Bank Of England used to use the Retail Price Index (RPI).
+        The standard measure is the Consumer Price Index (CPI). The Bank Of England (BofE) now prefers CPIH, which includes housing costs
+        based on what someone renting a home might pay. The Fed has adopted Personal Consumption Expenditures (PCE), which accounts for a
+        wider set of consumers.
+    </p>
+
+    <p>
+        I quite like the Household Costs Indices (HCI), an experimental measure by the BofE aiming to capture: the required change in disposable
+        earnings necessary to maintain the same quality and quantity of a basket of goods and services. I believe shrinkflation is included in
+        <a href="https://webarchive.nationalarchives.gov.uk/20160109133536/http://www.ons.gov.uk/ons/rel/cpi/consumer-price-indices---technical-manual/2014/index.html">quality adjustments</a>,
+        - it is quite <a href="https://www.mathscareers.org.uk/the-maths-of-shrinkflation-how-your-food-could-be-getting-smaller/">a severe hidden inflation</a>.
+        Sadly, there is not as much data for HCI, so I will use (PCE?) CPI and CPIH, focusing on the US and UK for now.
+    </p>
+
+    <p>
+        Here is a chart of 'Trimmed' PCE inflation - this means we exclude components of consumption with the most extreme price changes:
+     </p>
+
+    <img src="fredgraph.png" width="536"/>
+
+    <p>
+        For each graph, I'm showing the last 30 years, and it ends in April 2021. Perhaps it's not fair to remove components with the most extreme price changes.
+        Here's a table to show the components with the greatest impact that have been removed <i>in the latest month</i> (arbitrarily %chg.price * weight > 10).
+    </p>
+
+    <img src="table1.png" width="536"/>
+
+    <p>
+        We can probably ignore the negative 'impacts', which might reflect falls from historically high prices. The other components appear to be durable goods 
+        and services disrupted by the pandemic. As large businesses are allowed to open fully, I expect supply can be increased and demand for these products
+        will become less extreme as consumers find substitutes. For example, you might prefer buying a sofa from a small business that has been closed since the
+        start of the pandemic, or do an outdoor adventure activity rather than watching an American football game on TV.
+    </p>
+
+    <p>
+        And notice the sub-2% inflation rate adjusting for the extremes! As the economy reopens, I expect prices from a wider variety of components to increase substantially,
+        driving this particular inflation rate above 2%: businesses will expect government support to wane, and so increasing prices might help the businesses survive or at least
+        feel more cash rich.
+    </p>
+
+    <p>
+        The headline figure is from the chart of CPI for 'All Urban Consumers':
+    </p>
+
+    <img src="fredgraph2.png" width="536"/>
+
+    <p>
+        It looks like the rate of inflation has been changing <i>faster</i> during the pandemic. I personally think this relates to the exception nature of the lockdown - few businesses expected
+        anything like this, and so lots of planning for the future has been greatly disrupted. But if conditions were allowed to return to normal, the disinflation would surely be just as fast as 
+        the rise in inflation.
+    </p>
+
+    <p>
+        Here's Britain's chart of CPIH inflation:
+    </p>
+
+    <img src="bofe_cpih.png" width="535"/>
+
+</body>
+</html>
