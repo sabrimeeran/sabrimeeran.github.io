@@ -10,10 +10,12 @@
         th, td {
             padding-right: 10px;
         }
+
         table, td {
             border: 1px solid black;
             border-collapse: collapse;
         }
+
         th, #total {
             background-color: black;
             color: white;
@@ -115,13 +117,25 @@
         according to
         <a href="https://www.theguardian.com/uk-news/2020/mar/16/ebay-urged-to-clamp-down-on-coronavirus-profiteering">the Guardian</a>.
         In this way, quantity control could reduce component price inflation, resulting in a lower
-        CPI statistic.
+        CPI statistic. However, for many goods and services, rationing for the greater social good is not expected.
+        I want to try to predict CPI inflation using historical data, assuming that complicating behaviours
+        do not occur.
+    </p>
+
+
+    <h1><u>The method</u></h1>
+
+    <p>
+        I needed data on CPI components at least stretching back to the 1980s. The methodology and components measured
+        might be different, but I could not predict a double-digit inflation rate without this data. Sadly, monthly component
+        Excel data was only available back to 2012, and the news reports were only available back to 1994. One method of
+        looking back to the 1970s is to use FRED data for components, choosing components available in the latest release
+        (and in the ones back until the 1970s). This is a bit more tedious but has the desired effect of allowing us to
+        predict double-digit inflation.
     </p>
 
     <p>
-        However, for many goods and services, rationing for the greater social good is not expected.
-        For example, used car price inflation continues to rise, from _.
-
+        
     </p>
 
 </body>
