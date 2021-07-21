@@ -1,0 +1,20 @@
+                                                                                                          
+SAS4     TRANSPORTATION SERVICES                         6.646     6.797                                                                                                                                                                                                                      
+SA111    FOOD AT HOME                                    9.864    11.138                                                                                                                                                                                                
+SA21     SHELTER                                        27.816    25.513                                                                                                                                                                                                                
+SA3      APPAREL AND UPKEEP                              6.335     6.358                                                                                                                                                                                                                                                                                                                              
+SA51     MEDICAL CARE COMMODITIES                        1.114     0.915                                                                                                            
+SA512    MEDICAL CARE SERVICES                           4.715     4.032                                                                                                            
+                                                                                                 
+SE19     FOOD AWAY FROM HOME                             6.192     6.653                                                                                                            
+SE20     ALCOHOLIC BEVERAGES                             1.552     1.657                                                                                                            
+
+SE25     FUEL OIL & OTH HOUS. FUEL COM.                  0.426     0.387                                                                                                                                                                                                                  
+SE2601   ELECTRICITY                                     2.673     2.738                                                                                                            
+SE2602   UTILITY (PIPED) GAS                             1.229     1.294                                                                                                            
+                                                                                                
+SE45     NEW VEHICLES                                    5.452     5.292                                                                                                            
+SE46     USED CARS                                       1.313     2.347                                                                                                            
+SE4701   MOTOR FUEL                                      3.290     4.030                                                                                                            
+                                                                                                          
+SE63     TOBACCO AND SMOKING PRODUCTS                    1.287     1.695                                                                                                                                                                                                       
