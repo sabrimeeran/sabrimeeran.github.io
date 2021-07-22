@@ -125,10 +125,9 @@
         will differ somewhat over this stretch of time, but I could not predict a double-digit inflation rate without this data.
         Sadly, monthly component Excel data was only available back to 2012, and the news reports were only available back to 1994. 
         Thus, I decided to use FRED data for components and made sure the components chosen were generic enough to be available at
-        least back to 1994, and mostly available to 1970.The components I chose were:
+        least back to 1987, and mostly available to 1970.The components I chose were:
     </p>
 
-    <p>
         <ol>
             <li>FOOD AT HOME</li>
             <li>FOOD AWAY FROM HOME</li>
@@ -151,7 +150,33 @@
             <li>ALCOHOLIC BEVERAGES</li>
 
         </ol>
+    
+    <p>
+        Using 1987 weights, this covers 79.9% of CPI expenditure (less if there is overlap). I suspect 70-80% is the rough range it covers. The
+        next task was to compile the data and make a CSV file for it. I used the following FRED data:
     </p>
+
+    <ol>
+        <li>Food at Home in U.S. City Average (CUSR0000SAF11)</li>
+        <li>Food Away from Home in U.S. City Average (CUSR0000SEFV)</li>
+
+        <li>Shelter in U.S. City Average (CUSR0000SAH1)</li>
+        <li>Apparel in U.S. City Average (CPIAPPSL)</li>
+        <li>Medical Care Commodities in U.S. City Average (CUSR0000SAM1)</li>
+        <li>Medical Care Services in U.S. City Average (CUSR0000SAM2)</li>
+
+        <li>Fuel Oil and Other Fuels in U.S. City Average (CUSR0000SEHE)</li>
+        <li>Motor Fuel in U.S. City Average (CUSR0000SETB)</li>
+        <li>Utility (Piped) Gas Service in U.S. City Average (CUSR0000SEHF02)</li>
+        <li>Electricity in U.S. City Average (CUSR0000SEHF01)</li>
+
+        <li>New Vehicles in U.S. City Average (CUSR0000SETA01)</li>
+        <li>Used Cars and Trucks in U.S. City Average (CUSR0000SETA02)</li>
+        <li>Transportation Services in U.S. City Average (CUSR0000SAS4)</li>
+
+        <li></li>
+        <li></li>
+    </ol>
 
     <p>
         LaTex system explanation / word?
