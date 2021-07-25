@@ -28,7 +28,7 @@
 
     <p>
         To start with, we can use Mean Trimmed PCE inclusions and exclusions to find inflation data
-        for individual components. We should first look at components where inflation &gt;10%. 
+        for individual components. We should first look at components where inflation &gt;10%.
         It's a startlingly large percentage of the components - 17.84% - that are experiencing &gt;10%
         inflation! And it appears these components are contributing 23.4 percentage points
         to inflation (!)
@@ -111,7 +111,7 @@
 
     <h1><u>The theory</u></h1>
 
-    <img src="Diag1Infl.png" width="536"/>
+    <img src="Diag1Infl.png" width="536" />
 
     <p>
         I, at first glance, think that we can use inflation data for items in the basket of goods and services over a reasonably
@@ -123,34 +123,34 @@
     <p>
         I thus needed data on <u>CPI</u> components at least stretching back to the 1970s. The methodology and components measured
         will differ somewhat over this stretch of time, but I could not predict a double-digit inflation rate without this data.
-        Sadly, monthly component Excel data were only available back to 2012, and the news reports were only available back to 1994. 
+        Sadly, monthly component Excel data were only available back to 2012, and the news reports were only available back to 1994.
         Thus, I decided to use FRED data for components and made sure the components chosen were generic enough to be available at
         least back to 1987, and mostly available to 1970.The components I chose were:
     </p>
 
-        <ol>
-            <li>FOOD AT HOME</li>
-            <li>FOOD AWAY FROM HOME</li>
+    <ol>
+        <li>FOOD AT HOME</li>
+        <li>FOOD AWAY FROM HOME</li>
 
-            <li>SHELTER</li>
-            <li>APPAREL AND UPKEEP</li>
-            <li>MEDICAL CARE COMMODITIES</li>
-            <li>MEDICAL CARE SERVICES</li>
+        <li>SHELTER</li>
+        <li>APPAREL AND UPKEEP</li>
+        <li>MEDICAL CARE COMMODITIES</li>
+        <li>MEDICAL CARE SERVICES</li>
 
-            <li>FUEL OIL & OTH HOUS. FUEL COM.</i>
-            <li>MOTOR FUEL</li>
-            <li>UTILITY (PIPED) GAS</li>
-            <li>ELECTRICITY</li>
+        <li>FUEL OIL & OTH HOUS. FUEL COM.</i>
+        <li>MOTOR FUEL</li>
+        <li>UTILITY (PIPED) GAS</li>
+        <li>ELECTRICITY</li>
 
-            <li>NEW VEHICLES</li>
-            <li>USED CARS</li>
-            <li>TRANSPORTATION SERVICES</li>
+        <li>NEW VEHICLES</li>
+        <li>USED CARS</li>
+        <li>TRANSPORTATION SERVICES</li>
 
-            <li>TOBACCO AND SMOKING PRODUCTS</li>
-            <li>ALCOHOLIC BEVERAGES</li>
+        <li>TOBACCO AND SMOKING PRODUCTS</li>
+        <li>ALCOHOLIC BEVERAGES</li>
 
-        </ol>
-    
+    </ol>
+
     <p>
         Using 1987 weights, this covers 79.9% of CPI expenditure (less if there is overlap). I suspect 70-80% is the rough range it covers. The
         next task was to compile the data and make a CSV file for it. I used the following FRED data:
@@ -184,19 +184,28 @@
         to use Excel so that I could just paste the documents and the relevant weightings would be extracted - phew!
     </p>
 
-    <p>I tried to use mathematical notation (or pseudo-mathemtical notation) first, before coding. This was a bit tedious, but
-    made it easier to see mistakes, and, because it was quite difficult to write, pushed me to simplify the model:</p>
-
-    <img src="img1.png" width="402"/>
-    <br/>
-    <img src="img2.png" width="402"/>
-    <br/>
-    <img src="img3.png" width="402"/>
-    <br/>
-    <img src="img4.png" width="402"/>
-    
     <p>
-        Description
+        I tried to use mathematical notation (or pseudo-mathemtical notation) first, before coding. This was a bit tedious, but
+        made it easier to see mistakes, and, because it was quite difficult to write, pushed me to simplify the model:
+    </p>
+
+    <img src="img1.png" width="536" />
+    <br />
+    <img src="img2.png" width="536" />
+    <p>
+        <i>InflGap</i> indicates how similar two months in the dataset are. This is then extended to find how similar two periods - with
+        the same number of months - are (<i>IntervalInflationGap</i>).
+    </p>
+    <img src="img3.png" width="536" />
+    <p>
+        'tau' is the fixed month (or the fixed interval), and 't' is the candidate month which changes (or the candidate interval). We want
+        't' to be less than 'tau' because we intend to predict inflation in month 'tau'. If we used data from a month 't' which is later than
+        'tau', it would be unrealistic and perhaps deceptive - when predicting future inflation we only have data available from the past.
+    </p>
+    <img src="img4.png" width="536" />
+
+    <p>
+        Once we have <i>BestModelIIG</i>, we can compare our predictions to other accepted inflation prediction models. So, on to the coding-
     </p>
 
 </body>
