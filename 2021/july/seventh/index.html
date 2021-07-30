@@ -219,9 +219,22 @@
     </p>
 
     <img src="inflpred2.png" width="536"/>
-    <p>Using length = 5 months, discount value = 0.9 - the best model with data from 1988. Now I'll show the model with data from 1980 - before this, gas and electricity
-    weightings are merged. This model might be considered later.</p>
+    
+    <p>Using length = 5 months, discount value = 0.9 - the best model with data from 1988. Now I'll show the model with data from 1980:</p>
+    
+    <img src="inflpred3.png" width="536"/>
 
+    <p>Using length = 5 months, discount value = 0.8 - the best model with data from 1980. I wanted to use data starting from 1970, because this would allow the prediction
+    of much higher rates of inflation, if necessary. However, significant changes to CPI components at this time made it tricky.</p>
+
+    <p>I'll briefly describe how I accomodated changes in CPI components. Firstly, from 1977-1979, gas (piped) and electricity were combined, so I guessed the individual 
+    weightings for these years using the trend between these years. Thus I did not need to make significant changes to the data structure. Secondly, from 1970-1976, Medical
+    care commodities was not available, so I constructed it by taking the difference between Medical care and Medical care services. Thirdly, I assumed the following were
+    the roughly the same: Motor fuel and Gasoline and motor oil; Automobiles, new and New vehicles; Automobiles, used and Used cars.</p>
+
+    <img src="70scomps.png" width="536"/>
+    <br/>
+    <img src="70scomps2.png" width="536"/>
 
 </body>
 </html>
