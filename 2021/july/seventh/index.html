@@ -228,20 +228,23 @@
     of much higher rates of inflation, if necessary. However, significant changes to CPI components at this time made it tricky.</p>
 
     <p>I'll briefly describe how I accomodated changes in CPI components. Firstly, from 1977-1979, gas (piped) and electricity were combined, so I guessed the individual 
-    weightings for these years using the trend between these years. Thus I did not need to make significant changes to the data structure. Secondly, from 1970-1976, Medical
-    care commodities was not available, so I constructed it by taking the difference between Medical care and Medical care services. Thirdly, I assumed the following were
-    the roughly the same: Motor fuel and Gasoline and motor oil; Automobiles, new and New vehicles; Automobiles, used and Used cars.</p>
+    weightings for these years using the trend between these years. Thus, using imputation,  I did not need to make significant changes to the data structure. Secondly, from
+    1970-1976, Medical care commodities was not available, so I constructed it by taking the difference between Medical care and Medical care services. Thirdly, I assumed the 
+    following were the roughly the same: Motor fuel and Gasoline and motor oil; Automobiles, new and New vehicles; Automobiles, used and Used cars.</p>
 
     <img src="70scomps.PNG" width="536"/>
     <br/>
     <img src="70scomps2.PNG" width="536"/>
 
-    <p>The first attempt, using length = 3, discount value = 0.5, for data from 1970, did not look very successful.</p>
-
-    <img src="inflpred4.png" width="536"/>
-
-    <p>I decided to use data from 1970, but assess the accuracy of the model using predictions from 1990 to 2021:</p>
+    <p>I decided to use data from 1970, but assess the accuracy of the model using predictions from 1990 to 2021. It used
+    length = 3, discount value = 0.5:</p>
 
     <img src="inflpred5.png" width="536"/>
+
+    <p>Here is a comparison of the real and predicted 12-monthly inflation rates:</p>
+
+    <img src="12mpred1.png" width="536"/>
+
+    <h2><u>Future inflation predictions</u></h2>
 </body>
 </html>
