@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿ND<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -250,5 +250,16 @@
     <img src="12mpred2.png" width="536"/>
 
     <h2><u>Future inflation predictions</u></h2>
+
+    <p>I predict a 12-monthly inflation rate of 6.3% in July (a claim we can interrogate in just four days, on August 11th). That is all I can predict, sadly, because there is no sensible
+    way to construct a prediction of future component inflation and thus predict inflation for a few more months.</p>
+
+    <h2><u>Issues</u></h2>
+    
+    <p>I am worried that I have made a mistake when dealing with a pseudo-enum, appropriately called <i>ERROR</i>. The fake enum takes the value -1, and is meant to return this value if I have
+    given the program invalid dates for <i>InflGap</i> to handle, so that I can debug it properly. But I forgot to actually incorporate this at a higher level, with functions such as <i>IIG</i>.
+    So potentially the program is using -1 in some of its calculations incorrectly rather than rejecting these inputs. I can tell it is having an impact, because changing the value to -100 drastically
+    changes the shape of the prediction line, making it nearly completely straight, rather than jagged in a similar way to the true CPI results. I do not know when I will have time to work on this, but
+    I don't think it is necessarily catastrophic.</p>
 </body>
 </html>
